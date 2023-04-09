@@ -65,6 +65,7 @@ body main div.container span {
 }
 body main div.container a {
   color: var(--dark-pink);
+  text-decoration: none;
 }
 body main div.container a:hover {
   color: var(--vivid-pink);

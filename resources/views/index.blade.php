@@ -55,7 +55,9 @@
                     <br>
                     Password : projetweb2admin
                     <br>
-                    N'oubliez pas de consulter le README du repo pour les instructions d'installation.
+                    N'oubliez pas de consulter le
+                    <a href="https://github.com/patricia-m/scolaire-projet-web-2#readme" target="blank">README</a>
+                    du repo pour les instructions d'installation.
                 </small>
             </p>
 
