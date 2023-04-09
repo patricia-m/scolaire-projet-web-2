@@ -1,0 +1,182 @@
+:root {
+    --color: var(--dark-pink);
+    --color-hover: var(--vivid-pink);
+}
+
+.user_icon:hover,
+.user_icon:focus {
+    background-image: url("../../media/icons/user_icon_pink.svg");
+}
+
+.user_icon_connected {
+    background-image: url("../../media/icons/user_icon_pink_connected.svg") !important;
+}
+
+.user_icon_connected:hover,
+.user_icon_connected:focus {
+    background-image: url("../../media/icons/user_icon_pink_connected_hover.svg") !important;
+}
+
+.instagram_icon:hover {
+    background-image: url("../../media/icons/instagram_hover_pink.svg") !important;
+}
+
+.facebook_icon:hover {
+    background-image: url("../../media/icons/facebook_hover_pink.svg") !important;
+}
+
+.discord_icon:hover {
+    background-image: url("../../media/icons/discord_hover_pink.svg") !important;
+}
+
+.subcategory_bar {
+    background-color: var(--color);
+    box-shadow: 0px 0px 5px var(--color-hover);
+    height: 1.5px;
+}
+
+.activity_image {
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+}
+
+.activity_date {
+    font-family: "termina", sans-serif;
+    font-size: 0.785rem;
+    font-weight: 100;
+    letter-spacing: 0.025rem;
+}
+
+#desktop_version {
+
+    .container {
+        margin-inline: 20px;
+    }
+
+    #activity_list {
+        border: 2px solid var(--color);
+        border-radius: 10px;
+        height: auto;
+        width: auto;
+
+        .activity_button {
+            background-color: var(--bg-color) !important;
+            border: 2px solid var(--color) !important;
+            border-radius: 0px;
+            box-shadow: none !important;
+            color: var(--white);
+            width: 235px;
+
+            &:hover {
+                background-color: var(--color) !important;
+            }
+
+            &:active,
+            &:focus {
+                background-color: var(--color-hover) !important;
+            }
+        }
+
+        .activity_button:first-of-type,
+        .activity_button:nth-child(10) {
+            border-radius: 0px 0px 0px 0px;
+            border-radius: 7px 7px 0px 0px !important;
+        }
+
+        .activity_list_pagination {
+            border: 2px solid var(--color) !important;
+            border-radius: 0px 0px 7px 7px !important;
+
+            .activity_list_button,
+            button {
+                background: none !important;
+                border: none;
+                box-shadow: none;
+                width: 46px;
+
+                &:hover,
+                &:focus {
+                    background: none !important;
+                    color: var(--color-hover) !important;
+                    text-decoration: underline;
+                    text-underline-offset: 0.25em;
+                }
+            }
+        }
+    }
+}
+
+
+#accordion {
+    border: 2px solid var(--color) !important;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px var(--color-hover);
+
+    // Écrase les valeurs des variables de Bootstrap pour les svg d'accordéon
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+
+    .accordion-item {
+        background-color: var(--bg-color) !important;
+        border: 1px solid var(--color) !important;
+        border-width: 3px;
+        color: var(--white);
+
+        .accordion-header {
+            border-bottom: 2px solid var(--color) !important;
+        }
+
+        .accordion-button {
+            background-color: var(--bg-color) !important;
+            border-color: var(--color) !important;
+            box-shadow: none !important;
+            color: var(--white);
+
+            &:hover {
+                background-color: var(--color) !important;
+            }
+
+            &:active,
+            &:focus {
+                background-color: var(--color-hover) !important;
+            }
+        }
+
+        .accordion-body {
+            border-bottom: 2px solid var(--color) !important;
+            padding-block: 2.5rem !important;
+
+            h2 {
+                text-transform: uppercase;
+            }
+
+            .subcategory_bar {
+                margin-bottom: 2rem;
+                width: 75%;
+            }
+
+            p {
+                max-width: 600px;
+            }
+        }
+    }
+
+    .accordion-item:first-of-type {
+
+        .accordion-button,
+        .accordion-header {
+            border-radius: 5px 5px 0px 0px;
+        }
+    }
+
+    .accordion-item:last-of-type {
+        .accordion-button {
+            border-radius: 0px 0px 3px 3px;
+        }
+
+        .accordion-header {
+            border-radius: 0px 0px 5px 5px;
+        }
+    }
+}

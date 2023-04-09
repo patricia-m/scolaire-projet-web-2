@@ -1,0 +1,165 @@
+:root {
+    --color: var(--dark-turquoise);
+    --color-hover: var(--vivid-turquoise);
+}
+
+.user_icon:hover,
+.user_icon:focus {
+    background-image: url("../../media/icons/user_icon_turquoise.svg") !important;
+}
+
+main {
+    min-height: calc(100vh - 50px) !important;
+
+    .admin_create_container {
+        width: 46.25rem;
+    }
+
+    .form-container {
+        form {
+
+            input[type=datetime-local],
+            input[type=password],
+            input[type=text],
+            input[type=submit] {
+                border-color: var(--color);
+                box-shadow: 0px 0px 5px var(--color-hover);
+
+                &:focus {
+                    box-shadow: 0px 0px 5px 2px var(--color-hover);
+                    outline: none;
+                }
+            }
+
+            input[type=datetime-local],
+            input[type=file],
+            input[type=password],
+            input[type=text] {
+                padding-block: 0.5em;
+                padding-inline: 1em;
+            }
+
+            .custom-file-upload {
+                background-color: var(--bg-color);
+                border-color: var(--color);
+                box-shadow: 0px 0px 5px var(--color-hover);
+                border-radius: 10px;
+                color: var(--white);
+                display: inline-block;
+            }
+
+            input[type=datetime-local] {
+                background-color: var(--bg-color);
+                border-color: var(--color);
+                border-radius: 10px;
+                box-shadow: 0px 0px 5px var(--color-hover);
+                color: var(--white);
+            }
+
+            input[type=datetime-local]::-webkit-calendar-picker-indicator {
+                appearance: none;
+                background: url('../../media/icons/calendar.svg') no-repeat center center;
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+            }
+
+            .category {
+                background-color: var(--bg-color);
+                border-color: var(--color);
+                border-radius: 10px;
+                box-shadow: 0px 0px 5px var(--color-hover);
+                color: var(--white);
+                padding-block: 0.38em;
+                padding-inline: 1em;
+
+                &:focus {
+                    box-shadow: 0px 0px 5px 2px var(--color-hover);
+                    outline: none;
+                }
+            }
+
+            textarea::-webkit-scrollbar {
+                background-color: var(--bg-color);
+                border-radius: 6px;
+                width: 15px;
+            }
+
+            textarea::-webkit-scrollbar-thumb {
+                background-color: var(--color);
+                border-radius: 0px 3px 0px 0px;
+            }
+
+            textarea::-webkit-scrollbar-thumb:hover {
+                background-color: var(--color-hover);
+            }
+
+            textarea {
+                background-color: var(--bg-color);
+                border: 2px solid var(--color);
+                border-radius: 6px;
+            }
+
+            textarea::-webkit-resizer {
+                background-color: var(--bg-color);
+                border: 2px solid var(--color);
+            }
+
+            input[type=submit] {
+                padding-block: 0.25em;
+                padding-inline: 1.5em;
+
+                &:hover,
+                &:focus {
+                    background-color: var(--color);
+                    box-shadow: 0px 0px 5px var(--color-hover);
+                }
+            }
+        }
+
+        .text_link {
+            color: var(--color-hover);
+
+            &:hover {
+                color: var(--color-hover) !important;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+footer {
+    height: 45px !important;
+    position: static;
+
+    #copyright {
+        padding-bottom: 15px;
+    }
+}
+
+// MEDIA QUERIES ----------
+@media only screen and (min-width: 1400px) {
+
+    input[type=password],
+    input[type=text] {
+        width: max(18.75rem, 100%);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    div.container {
+        width: 75% !important;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .form-container {
+        form {
+
+            input[type=password],
+            input[type=text] {
+                padding-inline: 1.5em;
+            }
+        }
+    }
+}

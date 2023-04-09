@@ -1,0 +1,148 @@
+:root {
+    --color: var(--dark-pink);
+    --color-hover: var(--vivid-pink);
+}
+
+.user_icon:hover,
+.user_icon:focus {
+    background-image: url("../../media/icons/user_icon_pink.svg");
+}
+
+.user_icon_connected {
+    background-image: url("../../media/icons/user_icon_pink_connected.svg") !important;
+}
+
+.user_icon_connected:hover,
+.user_icon_connected:focus {
+    background-image: url("../../media/icons/user_icon_pink_connected_hover.svg") !important;
+}
+
+.instagram_icon:hover {
+    background-image: url("../../media/icons/instagram_hover_pink.svg") !important;
+}
+
+.facebook_icon:hover {
+    background-image: url("../../media/icons/facebook_hover_pink.svg") !important;
+}
+
+.discord_icon:hover {
+    background-image: url("../../media/icons/discord_hover_pink.svg") !important;
+}
+
+main {
+    .container {
+        padding: 0 20px 0 20px;
+
+        section {
+            margin-top: 11rem !important;
+
+            .border_box {
+                border: 3px solid var(--color);
+                box-shadow: inset 0px 0px 5px var(--color-hover), 0px 0px 5px var(--color-hover);
+            }
+
+            h3.featured_package {
+                color: var(--color)
+            }
+
+            .title_decoration {
+                background-color: var(--color);
+                position: relative;
+                height: 2px;
+                width: 100%;
+
+                .circle {
+                    background-color: var(--color);
+                    border-radius: 50%;
+                    height: 15px;
+                    margin-left: 7.5px;
+                    position: absolute;
+                    left: 0%;
+                    transform: translate(-50%, -50%);
+                    width: 15px;
+                }
+            }
+
+            p.description {
+                margin-bottom: 2rem;
+            }
+
+            div.price {
+                p {
+                    font-family: "ethnocentric", sans-serif;
+                    font-size: 2rem;
+                    font-weight: 300;
+                }
+            }
+
+            form {
+                select {
+                    background-color: var(--bg-color);
+                    color: var(--white);
+                    height: 3rem;
+                    padding: 0rem 1rem;
+                }
+
+                p.festival_over {
+                    color: var(--color-hover);
+                }
+
+                input[type=submit] {
+                    background-color: var(--bg-color);
+                    border-color: var(--color-hover);
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 5px var(--color-hover);
+                    color: var(--white);
+                    flex-shrink: 1;
+                    font-family: "termina", sans-serif;
+                    padding-block: 0.5em;
+                    padding-inline: 1em;
+
+                    &.disabled {
+                        border-color: var(--white);
+                        box-shadow: none;
+                        opacity: 0.7;
+
+                        &:hover {
+                            background-color: var(--bg-color);
+                            opacity: 0.7;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: var(--color-hover);
+                        color: var(--white);
+                    }
+                }
+            }
+
+            div.package_img {
+                img {
+                    border-radius: 10px;
+                    height: 15rem;
+                    width: 100%;
+                    object-fit: cover;
+
+                    @media only screen and (min-width: 576px) {
+                        height: 25rem;
+                    }
+                }
+            }
+        }
+
+        .details {
+            margin-top: 7rem !important;
+
+            p.help {
+                color: var(--grey);
+                font-size: 0.875rem;
+                line-height: 1.5rem;
+                margin-top: 0.5rem;
+            }
+        }
+    }
+}
+
+div.footer {
+    padding-top: 6rem !important;
+}

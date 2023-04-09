@@ -1,0 +1,135 @@
+:root {
+  --color: var(--dark-turquoise);
+  --color-hover: var(--vivid-turquoise);
+}
+
+.user_icon:hover,
+.user_icon:focus {
+  background-image: url("../../media/icons/user_icon_turquoise.svg") !important;
+}
+
+main {
+  min-height: calc(100vh - 50px) !important;
+}
+main .admin_create_container {
+  width: 46.25rem;
+}
+main .form-container form input[type=datetime-local],
+main .form-container form input[type=password],
+main .form-container form input[type=text],
+main .form-container form input[type=submit] {
+  border-color: var(--color);
+  box-shadow: 0px 0px 5px var(--color-hover);
+}
+main .form-container form input[type=datetime-local]:focus,
+main .form-container form input[type=password]:focus,
+main .form-container form input[type=text]:focus,
+main .form-container form input[type=submit]:focus {
+  box-shadow: 0px 0px 5px 2px var(--color-hover);
+  outline: none;
+}
+main .form-container form input[type=datetime-local],
+main .form-container form input[type=file],
+main .form-container form input[type=password],
+main .form-container form input[type=text] {
+  padding-block: 0.5em;
+  padding-inline: 1em;
+}
+main .form-container form .custom-file-upload {
+  background-color: var(--bg-color);
+  border-color: var(--color);
+  box-shadow: 0px 0px 5px var(--color-hover);
+  border-radius: 10px;
+  color: var(--white);
+  display: inline-block;
+}
+main .form-container form input[type=datetime-local] {
+  background-color: var(--bg-color);
+  border-color: var(--color);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px var(--color-hover);
+  color: var(--white);
+}
+main .form-container form input[type=datetime-local]::-webkit-calendar-picker-indicator {
+  -webkit-appearance: none;
+          appearance: none;
+  background: url("../../media/icons/calendar.svg") no-repeat center center;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+}
+main .form-container form .category {
+  background-color: var(--bg-color);
+  border-color: var(--color);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px var(--color-hover);
+  color: var(--white);
+  padding-block: 0.38em;
+  padding-inline: 1em;
+}
+main .form-container form .category:focus {
+  box-shadow: 0px 0px 5px 2px var(--color-hover);
+  outline: none;
+}
+main .form-container form textarea::-webkit-scrollbar {
+  background-color: var(--bg-color);
+  border-radius: 6px;
+  width: 15px;
+}
+main .form-container form textarea::-webkit-scrollbar-thumb {
+  background-color: var(--color);
+  border-radius: 0px 3px 0px 0px;
+}
+main .form-container form textarea::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-hover);
+}
+main .form-container form textarea {
+  background-color: var(--bg-color);
+  border: 2px solid var(--color);
+  border-radius: 6px;
+}
+main .form-container form textarea::-webkit-resizer {
+  background-color: var(--bg-color);
+  border: 2px solid var(--color);
+}
+main .form-container form input[type=submit] {
+  padding-block: 0.25em;
+  padding-inline: 1.5em;
+}
+main .form-container form input[type=submit]:hover, main .form-container form input[type=submit]:focus {
+  background-color: var(--color);
+  box-shadow: 0px 0px 5px var(--color-hover);
+}
+main .form-container .text_link {
+  color: var(--color-hover);
+}
+main .form-container .text_link:hover {
+  color: var(--color-hover) !important;
+  text-decoration: underline;
+}
+
+footer {
+  height: 45px !important;
+  position: static;
+}
+footer #copyright {
+  padding-bottom: 15px;
+}
+
+@media only screen and (min-width: 1400px) {
+  input[type=password],
+  input[type=text] {
+    width: max(18.75rem, 100%);
+  }
+}
+@media only screen and (min-width: 992px) {
+  div.container {
+    width: 75% !important;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .form-container form input[type=password],
+  .form-container form input[type=text] {
+    padding-inline: 1.5em;
+  }
+}/*# sourceMappingURL=forms.css.map */

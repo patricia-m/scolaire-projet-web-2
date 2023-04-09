@@ -1,0 +1,66 @@
+:root {
+    --color: var(--dark-turquoise);
+    --color-hover: var(--vivid-turquoise);
+}
+
+.user_icon:hover,
+.user_icon:focus {
+    background-image: url("../../media/icons/user_icon_turquoise.svg");
+}
+
+.user_icon_connected {
+    background-image: url("../../media/icons/user_icon_turquoise_connected.svg") !important;
+}
+
+.user_icon_connected:hover,
+.user_icon_connected:focus {
+    background-image: url("../../media/icons/user_icon_turquoise_connected_hover.svg") !important;
+}
+
+.instagram_icon:hover {
+    background-image: url("../../media/icons/instagram_hover_turquoise.svg") !important;
+}
+
+.facebook_icon:hover {
+    background-image: url("../../media/icons/facebook_hover_turquoise.svg") !important;
+}
+
+.discord_icon:hover {
+    background-image: url("../../media/icons/discord_hover_turquoise.svg") !important;
+}
+
+main {
+    .container {
+        padding-inline: 20px;
+
+        h2.user_name {
+            color: var(--color);
+        }
+
+        .package_title {
+            font-weight: 600;
+        }
+
+        .subtotal {
+            span {
+                font-weight: 600;
+                font-size: 1.8rem;
+            }
+        }
+
+        @media only screen and (min-width: 992px) {
+            .package_title {
+                width: 25%;
+            }
+
+            .package_date {
+                width: 37%;
+            }
+
+            .package_price {
+                width: 15%;
+            }
+        }
+    }
+
+}

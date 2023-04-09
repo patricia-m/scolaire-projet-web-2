@@ -1,0 +1,334 @@
+:root {
+  --bg-color: #020402;
+  --grey: #9d9d9d;
+  --white: #ffffff;
+  --dark-blue: #0058b9;
+  --vivid-blue: #017aff;
+  --dark-turquoise: #00afc2;
+  --vivid-turquoise: #00e6ff;
+  --dark-pink: #8e0089;
+  --vivid-pink: #f500ed;
+  --color: #8e0089;
+  --color-hover: #f500ed;
+}
+
+body,
+html {
+  background-color: var(--bg-color);
+  color: var(--white);
+  min-height: 100vh;
+  position: relative;
+  scroll-behavior: smooth;
+  width: calc(100vw - (100vw - 100%));
+}
+body ul,
+html ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+body ::-moz-selection,
+html ::-moz-selection {
+  background: var(--white);
+  color: var(--bg-color);
+}
+body ::-moz-selection, html ::-moz-selection {
+  background: var(--white);
+  color: var(--bg-color);
+}
+body ::selection,
+html ::selection {
+  background: var(--white);
+  color: var(--bg-color);
+}
+
+.modal-content {
+  background-color: var(--dark-turquoise) !important;
+}
+
+.popup_message {
+  background-color: var(--dark-turquoise);
+  border-radius: 10px;
+  color: var(--white);
+  padding-inline: 2em;
+}
+.popup_message p {
+  font-weight: 400 !important;
+  max-width: 75%;
+}
+
+h1 {
+  font-family: "ethnocentric", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.038rem;
+}
+
+h2 {
+  font-family: "ocr-b-std", monospace;
+  font-size: 1.375rem;
+}
+h3, h2.h3 {
+  font-family: "ethnocentric", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 0.031rem;
+}
+
+a,
+li,
+button,
+.link {
+  color: var(--white);
+  font-family: "termina", sans-serif;
+  font-size: 1rem;
+  font-weight: 500 !important;
+  letter-spacing: 0.03rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+a:hover,
+li:hover,
+button:hover,
+.link:hover {
+  font-weight: 500 !important;
+}
+
+input[type=submit] {
+  font-family: "ethnocentric", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+
+label {
+  font-family: "ethnocentric", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 200;
+  letter-spacing: 0.027rem;
+  white-space: nowrap;
+}
+
+div,
+p,
+span,
+textarea,
+input[type=text] {
+  font-family: "termina", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.025rem;
+}
+
+p,
+span,
+textarea {
+  line-height: 1.875rem;
+  max-width: 800px;
+}
+
+.paragraph {
+  margin-bottom: 1.875rem;
+}
+
+.error {
+  color: red;
+  font-size: 0.75rem;
+  line-height: normal;
+  margin-bottom: 0px;
+}
+
+.success {
+  color: greenyellow;
+  font-size: 0.75rem;
+  line-height: normal;
+  margin-bottom: 0px;
+}
+
+.active_link,
+.link:hover,
+.dropdown-item:hover,
+.dropdown_connected,
+a:hover {
+  color: var(--color) !important;
+}
+
+.user_name,
+.user_name:hover,
+.dropdown_connected:hover,
+.logo:hover {
+  color: var(--color-hover) !important;
+}
+
+li.user_name,
+li.user_name:hover {
+  cursor: default !important;
+}
+
+#menu_burger:hover .menu_bar,
+#menu_burger:focus .menu_bar,
+#menu_burger:active .menu_bar,
+.open_menu .menu_bar {
+  background-color: var(--color) !important;
+}
+
+nav {
+  background: linear-gradient(var(--bg-color) 80%, transparent);
+  padding-inline: clamp(20px, 2vw, 8.75rem) !important;
+  padding-top: 1.625rem;
+  height: 7rem;
+}
+nav .logo {
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+  padding-inline: 1rem;
+}
+nav .logo .title,
+nav .logo .title_reflection {
+  font-family: "ethnocentric", sans-serif;
+  font-size: clamp(1.5rem, 3vw, 3rem);
+  font-weight: 200;
+  letter-spacing: 0.5rem;
+  white-space: nowrap;
+}
+nav .logo .title {
+  line-height: 55%;
+  position: relative;
+  top: 10px;
+}
+nav .logo .title_reflection {
+  opacity: 0.1;
+  line-height: 75%;
+  transform: scale(1, -1);
+}
+nav .logo .festival {
+  font-family: "termina", sans-serif;
+  font-size: clamp(1rem, 1.6vw, 1.5rem);
+  font-weight: 400;
+  letter-spacing: 0.036rem;
+  position: relative;
+  top: 0.75em;
+}
+
+main {
+  min-height: 100vh;
+  padding-top: 70px;
+}
+main .page_title {
+  padding-inline: clamp(20px, 2vw, 8.75rem);
+  padding-top: 10%;
+}
+main .page_title .title_decoration {
+  background-color: var(--white);
+  height: 2px;
+  position: relative;
+  width: 100%;
+}
+main .page_title .title_decoration .circle {
+  background-color: var(--white);
+  border-radius: 50%;
+  height: 15px;
+  margin-left: 7.5px;
+  position: absolute;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+}
+main .container {
+  height: calc(100% - 70px);
+  padding-inline: 0px;
+}
+main .border_box {
+  background-color: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding-block: 1rem;
+  padding-inline: 1.25rem;
+}
+main .border_box form input[type=password],
+main .border_box form input[type=submit],
+main .border_box form input[type=text],
+main .border_box form textarea {
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  border-width: 1px;
+  color: var(--white);
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  width: 100%;
+}
+footer span {
+  padding-left: 0.25em;
+}
+
+@media only screen and (min-width: 1200px) {
+  .title_reflection {
+    line-height: 45% !important;
+  }
+  .page_title .title_decoration {
+    height: 3px;
+  }
+  .page_title .title_decoration .circle {
+    margin-left: 10px;
+    height: 20px;
+    width: 20px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .page_title {
+    max-width: 60vw;
+  }
+}
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-family: "ethnocentric", sans-serif;
+    font-size: 3.125rem;
+    letter-spacing: 0.078rem;
+  }
+  h2 {
+    font-family: "ocr-b-std", monospace;
+    font-size: 2.75rem;
+  }
+  h3, h2.h3 {
+    font-family: "ethnocentric", sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.048rem;
+  }
+  label {
+    font-family: "ethnocentric", sans-serif;
+    font-size: 1.375rem;
+    font-weight: 200;
+    letter-spacing: 0.034rem;
+  }
+  nav {
+    height: 100px !important;
+    background: linear-gradient(var(--bg-color) 60%, transparent);
+  }
+  main {
+    padding-top: 100px !important;
+  }
+  main .container {
+    height: calc(100% - 100px);
+  }
+  main .page_title {
+    padding-top: 5%;
+  }
+  main .border_box {
+    border: 3px solid var(--color);
+    box-shadow: inset 0px 0px 5px var(--color-hover), 0px 0px 5px var(--color-hover);
+  }
+}
+@media only screen and (min-width: 576px) {
+  .page_title {
+    max-width: 60vw;
+  }
+  .border_box {
+    padding-inline: 3rem !important;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,85 @@
+:root {
+    --bg-color: #020402;
+    --grey: #9d9d9d;
+    --white: #ffffff;
+    --dark-blue: #0058b9;
+    --vivid-blue: #017aff;
+    --dark-turquoise: #00afc2;
+    --vivid-turquoise: #00e6ff;
+    --dark-pink: #8e0089;
+    --vivid-pink: #f500ed;
+}
+
+body {
+    background-color: var(--bg-color);
+    max-width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+
+    main {
+        max-width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--white);
+
+        div.container {
+            max-width: 60%;
+            padding: 2rem 4rem;
+            font-family: "termina", sans-serif;
+
+            h1 {
+                font-family: "ethnocentric", sans-serif;
+                font-size: 1.7rem;
+            }
+
+            p {
+                margin-top: 2rem;
+                font-size: 0.9rem;
+
+                small {
+                    color: var(--grey);
+                }
+            }
+
+            div.team {
+                border-left: 1px solid var(--dark-turquoise);
+                margin-top: 2rem;
+                padding-left: 1rem;
+
+                p {
+                    margin-bottom: 0.5rem;
+                }
+
+                p.admin-infos {
+                    margin-top: 0;
+                }
+
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin-top: 0;
+
+                    li {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+
+            span {
+                font-weight: 700;
+                color: var(--dark-turquoise);
+            }
+
+            a {
+                color: var(--dark-pink);
+
+                &:hover {
+                    color: var(--vivid-pink);
+                }
+            }
+        }
+    }
+}

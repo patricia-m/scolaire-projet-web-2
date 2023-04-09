@@ -1,0 +1,100 @@
+@import "../styles.css";
+:root {
+  --color: var(--dark-blue) !important;
+  --color-hover: var(--vivid-blue) !important;
+}
+
+.modal-content,
+.popup_message {
+  background-color: var(--dark-pink) !important;
+  color: var(--white);
+}
+.modal-content p,
+.popup_message p {
+  margin-bottom: 0px !important;
+}
+
+.admin_nav {
+  padding-top: 1rem;
+}
+.admin_nav .li_space {
+  flex-basis: 20%;
+}
+.admin_nav .return_icon img,
+.admin_nav .logout_icon img {
+  opacity: 0;
+}
+.admin_nav .return_icon {
+  background: none;
+  background-image: url("../../media/icons/return.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.admin_nav a:hover {
+  color: var(--color);
+}
+.admin_nav a:hover .return_icon {
+  background-image: url("../../media/icons/return_hover.svg");
+}
+.admin_nav a:hover .logout_icon {
+  background-image: url("../../media/icons/logout_hover.svg");
+}
+.admin_nav .logout_icon {
+  background: none;
+  background-image: url("../../media/icons/logout.svg");
+  background-repeat: no-repeat;
+}
+
+main {
+  padding-bottom: 60px;
+}
+main .general_button {
+  background-color: var(--bg-color);
+  border: 2px solid var(--color-hover) !important;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px var(--color-hover);
+  color: var(--white);
+  flex-shrink: 1;
+  padding-block: 0.5em;
+  padding-inline: 1em;
+  width: 100%;
+}
+main .general_button:hover {
+  background-color: var(--color-hover);
+  color: var(--white) !important;
+}
+main .form-container {
+  border: 3px solid var(--color);
+  box-shadow: 0px 0px 10px var(--color-hover);
+}
+main .form-container form input[type=text],
+main .form-container form input[type=password],
+main .form-container form input[type=submit],
+main .form-container form textarea {
+  border-color: var(--color);
+  box-shadow: 0px 0px 5px var(--color-hover);
+}
+main .form-container form input[type=text]:focus,
+main .form-container form input[type=password]:focus,
+main .form-container form input[type=submit]:focus,
+main .form-container form textarea:focus {
+  box-shadow: 0px 0px 5px 2px var(--color-hover);
+  outline: none;
+}
+main .form-container form input[type=text],
+main .form-container form input[type=password] {
+  padding-block: 0.5em;
+  padding-inline: 1em;
+}
+main .form-container form input[type=submit] {
+  padding-block: 0.25em;
+  padding-inline: 1.5em;
+}
+main .form-container form input[type=submit]:hover, main .form-container form input[type=submit]:focus {
+  background-color: var(--color);
+  box-shadow: 0px 0px 5px var(--color-hover);
+}
+
+footer {
+  height: 45px !important;
+}/*# sourceMappingURL=admin_general.css.map */
